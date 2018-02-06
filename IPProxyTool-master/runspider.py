@@ -59,12 +59,12 @@ if __name__ == '__main__':
                 table = config.free_ipproxy_table)
         sql.execute(command)
         fun_list = [
-                    # SslProxies24, NewFreshProxies, ProxyDaily, Top90da, Arbawy, Spoofs,
-                    # ProxyServerList, FreeVpn, FreeSocks, CnProxy, XiCiDaiLiSpider, SixSixIpSpider,
-                    # IpOneEightOneSpider, KuaiDaiLiSpider, GatherproxySpider, HidemySpider, ProxylistplusSpider,
-                    # FreeProxyListsSpider, PeulandSpider, UsProxySpider,
+                    SslProxies24, NewFreshProxies, ProxyDaily, Top90da, Arbawy, Spoofs,
+                    ProxyServerList, FreeVpn, FreeSocks, CnProxy, XiCiDaiLiSpider, SixSixIpSpider,
+                    IpOneEightOneSpider, KuaiDaiLiSpider, GatherproxySpider, HidemySpider, ProxylistplusSpider,
+                    FreeProxyListsSpider, PeulandSpider, UsProxySpider,
                     YaHuProxySpider,
-                    # GoogleProxySpider
+                    GoogleProxySpider
         ]
         for i in fun_list:
             try:
