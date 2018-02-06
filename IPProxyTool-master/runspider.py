@@ -31,6 +31,7 @@ from ipproxytool.spiders.proxy.proxydaily import ProxyDaily
 from ipproxytool.spiders.proxy.newfreshproxies import NewFreshProxies
 from ipproxytool.spiders.proxy.sslproxies24 import SslProxies24
 from ipproxytool.spiders.proxy.google_proxy_ip_cupture import GoogleProxySpider
+from ipproxytool.spiders.proxy.yahu_proxy_ip_cupture import YaHuProxySpider
 
 scrapydo.setup()
 
@@ -60,7 +61,7 @@ if __name__ == '__main__':
         fun_list = [SslProxies24, NewFreshProxies, ProxyDaily, Top90da, Arbawy, Spoofs,
                     ProxyServerList, FreeVpn, FreeSocks, CnProxy, XiCiDaiLiSpider, SixSixIpSpider,
                     IpOneEightOneSpider, KuaiDaiLiSpider, GatherproxySpider, HidemySpider, ProxylistplusSpider,
-                    FreeProxyListsSpider, PeulandSpider, UsProxySpider, GoogleProxySpider]
+                    FreeProxyListsSpider, PeulandSpider, UsProxySpider, YaHuProxySpider, GoogleProxySpider]
         for i in fun_list:
             try:
                 items = scrapydo.run_spider(i)
